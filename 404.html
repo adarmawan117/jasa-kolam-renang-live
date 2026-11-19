@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>404 — Page Not Found | Ultimate Water Creations</title>
 <meta name="description" content="The page you are looking for does not exist or has been moved.">
-<link rel="canonical" href="/assets/404-VAvMERxa.html">
+<link rel="canonical" href="/assets/404-CR_gVhqm.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="404 — Page Not Found | Ultimate Water Creations">
 <meta property="og:description" content="The page you are looking for does not exist or has been moved.">
@@ -16,6 +16,82 @@
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
+    body.not-found-page {
+      --obsidian: #F8FAFD;
+      --obsidian-2: #FFFFFF;
+      --water-deep: #0B2238;
+      --caustic: #0284C7;
+      --caustic-soft: #00A3E0;
+      --travertine: #0284C7;
+      --bone: #0B2238;
+      --bone-dim: #475569;
+      --bone-faint: #64748B;
+      --hairline: #E2E8F0;
+
+      background: #F8FAFD;
+      color: #475569;
+    }
+
+    body.not-found-page ::selection {
+      background: #BAE6FD;
+      color: #0369A1;
+    }
+
+    /* Waterline */
+    body.not-found-page .waterline span {
+      background: linear-gradient(90deg, #0284C7, #38BDF8);
+      box-shadow: 0 0 12px #38BDF8;
+    }
+
+    /* Immediate Frosted Nav */
+    body.not-found-page nav {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(20px) saturate(1.4);
+      -webkit-backdrop-filter: blur(20px) saturate(1.4);
+      border-bottom: 1px solid #E2E8F0;
+      box-shadow: 0 4px 20px rgba(11, 34, 56, 0.05);
+      padding: 11px 40px;
+    }
+
+    body.not-found-page nav::before {
+      display: none !important;
+    }
+
+    body.not-found-page nav .brand {
+      color: #0B2238;
+    }
+
+    body.not-found-page nav .brand b {
+      color: #0284C7;
+    }
+
+    body.not-found-page nav .nav-links a {
+      color: #475569;
+    }
+
+    body.not-found-page nav .nav-links a:hover,
+    body.not-found-page nav .nav-links a.active {
+      color: #0284C7;
+    }
+
+    body.not-found-page nav .nav-toggle {
+      color: #0B2238;
+    }
+
+    body.not-found-page .mobile-menu {
+      background: rgba(248, 250, 253, 0.98);
+    }
+
+    body.not-found-page .mobile-menu a {
+      color: #0B2238;
+    }
+
+    body.not-found-page .mobile-menu a:hover,
+    body.not-found-page .mobile-menu a.active {
+      color: #0284C7;
+    }
+
+    /* 404 Hero Wrapper */
     .not-found-wrap {
       min-height: 75vh;
       display: flex;
@@ -23,37 +99,127 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 140px 24px 60px;
+      padding: 160px 24px 80px;
+      background: #F8FAFD;
     }
+
     .not-found-num {
       font-family: var(--serif);
       font-size: clamp(5rem, 14vw, 10rem);
-      font-weight: 500;
+      font-weight: 600;
       line-height: 1;
-      color: var(--travertine);
-      opacity: 0.6;
+      background: linear-gradient(135deg, #0284C7 0%, #38BDF8 50%, #0369A1 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      opacity: 0.85;
       margin-bottom: 12px;
     }
+
     .not-found-title {
       font-family: var(--serif);
       font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      color: #0B2238;
+      font-weight: 500;
       margin-bottom: 18px;
     }
+
     .not-found-title em {
       font-style: italic;
-      color: var(--travertine);
+      color: #0284C7;
     }
+
     .not-found-desc {
-      color: var(--bone-dim);
+      color: #475569;
       max-width: 480px;
       margin: 0 auto 32px;
       font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    body.not-found-page .btn-primary {
+      background: linear-gradient(180deg, #0284C7, #0369A1);
+      color: #FFFFFF;
+      box-shadow: 0 4px 18px rgba(2, 132, 199, 0.28);
+      font-weight: 600;
+    }
+
+    body.not-found-page .btn-primary:hover {
+      background: linear-gradient(180deg, #0EA5E9, #0284C7);
+      box-shadow: 0 8px 26px rgba(2, 132, 199, 0.42);
+      transform: translateY(-2px);
+    }
+
+    /* Footer Scoped */
+    body.not-found-page footer {
+      background: #061524;
+      border-top: 1px solid rgba(226, 232, 240, 0.12);
+      padding: 70px 48px 40px;
+      margin-top: 0;
+    }
+
+    body.not-found-page .foot-brand {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      margin-bottom: 18px;
+      color: #FFFFFF;
+    }
+
+    body.not-found-page .foot-grid > div > p {
+      font-size: 0.9rem;
+      color: rgba(240, 246, 250, 0.68);
+      max-width: 300px;
+    }
+
+    body.not-found-page .foot-col h4 {
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #38BDF8;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    body.not-found-page .foot-col a {
+      display: block;
+      color: rgba(240, 246, 250, 0.75);
+      text-decoration: none;
+      font-size: 0.92rem;
+      margin-bottom: 12px;
+      transition: color 0.3s;
+    }
+
+    body.not-found-page .foot-col a:hover {
+      color: #FFFFFF;
+    }
+
+    body.not-found-page .foot-bottom {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 30px;
+      border-top: 1px solid rgba(226, 232, 240, 0.1);
+      font-size: 12px;
+      color: rgba(240, 246, 250, 0.5);
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    @media (max-width: 900px) {
+      body.not-found-page nav {
+        padding: 16px 22px;
+      }
+      .not-found-wrap {
+        padding: 130px 22px 60px;
+      }
     }
   </style>
-  <script type="module" crossorigin src="/assets/site-Br8O61Ba.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/site-BANAWfM8.css">
+  <script type="module" crossorigin src="/assets/site-DBI2J54U.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/site-Dr-QKCjw.css">
 </head>
-<body>
+<body class="not-found-page">
 <div class="waterline"><span id="wl"></span></div>
 
 <nav id="nav">
