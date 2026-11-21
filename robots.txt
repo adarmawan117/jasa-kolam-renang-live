@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://berliankaisar77poll.com/sitemap.xml
